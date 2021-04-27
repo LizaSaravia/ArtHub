@@ -1,0 +1,173 @@
+.navBaralign{
+    display: flex;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* min-height: 100vh;   */
+    justify-content: center;
+    align-items:center;
+}
+.loadingPic{
+    background-image: url(../../Images/simple.gif);
+    height:110px;
+    width: 110px;
+}
+.divTitle{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* width:100%; */
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;    
+}
+
+.containerForm2{
+   
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.valError{
+    color: #F427EC;
+}
+.input{
+    margin-bottom: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    line-height: 1.9rem;    
+}
+
+.date{
+    margin: 10px 0;
+    color: white;
+    background-color: transparent;
+    /* border: none; */
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    line-height: 1.9rem;   
+    width: 125px;
+}
+
+.contRadio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 20px;
+    /* background-color: red; */
+}
+.radio{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.btn{
+    background-color: transparent;
+    color:white;
+    border:1px solid white;
+    cursor:pointer;
+    width:20%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.btn:hover{
+    animation: color 1s infinite;
+
+}
+.btn:focus{
+    outline:none;
+}
+
+.containerProfilePic {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 110px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.progressBar{
+    display: flex;
+    width: 110px;
+}
+
+.inputFile{
+    display:none;
+}
+
+@keyframes color {
+    0% {
+          background-color: #f427ed78; 
+    }
+
+    20% {
+        background-color: #f427ed8a; 
+    }
+
+    40%{
+        background-color: #f427eda2; 
+        border-color:rgba(255, 255, 255, 0.657)
+    }
+
+    60%{
+        background-color: #f427edc4; 
+        border-color:rgba(255, 255, 255, 0.445)
+    }
+
+    80%{
+        background-color: #f427ede5; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  
+    100% {
+        background-color: #f427ed; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  }
+
+@media screen and (max-width: 480px){
+    .mainContainer{
+        margin-top: 160px;
+    }
+
+    .secondContainer{
+        width: 90%;
+    }
+
+    .secondContainer form{
+        width: 100%;
+    }
+
+    .btn{
+        width: 100%;
+    }
+}
+

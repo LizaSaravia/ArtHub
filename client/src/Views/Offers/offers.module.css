@@ -1,0 +1,119 @@
+.mainContainer{
+    display: flex;
+}
+.formContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.formContainer form div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.formContainer label{
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.formContainer select, .formContainer input{
+    flex-grow: 1;
+    background-color: black;
+}
+
+.formContainer button{
+    align-self: flex-end;
+}
+
+.select{
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    border: 1px solid white;
+}
+
+.input{
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    color: white;
+    padding: 5px 20px;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #F427EC;
+}
+
+.offersContainer{
+    margin-top: 30px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.offer{
+    padding: 10px 30px;
+    border: 2px solid white;
+
+}
+
+@media screen and (max-width: 480px){
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        margin-top: 180px;
+        
+    }
+
+    .formContainer{
+        width: 90%;
+    }
+
+    .formContainer select{
+        margin-right: 20px;
+    }
+
+    .formContainer input{
+        margin-right: 10px;
+        width: 10%;
+    }
+
+    .offersContainer{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .offer{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

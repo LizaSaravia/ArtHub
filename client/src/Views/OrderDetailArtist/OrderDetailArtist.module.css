@@ -1,0 +1,30 @@
+.img {
+    height: 70px;
+    width: 60px;
+}
+
+.container {
+    border: 1px solid white;
+    display:flex;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 100px;
+    padding: 5px;
+    margin: 21px;
+    align-items: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 13%;
+}
+
+.firstContainer {
+    display: flex;
+}
+
+.select {
+    height: 20px;
+}

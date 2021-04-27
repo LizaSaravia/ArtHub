@@ -1,0 +1,48 @@
+.mainContainer{
+   
+    position:relative;
+   }
+   
+   .inpt{
+       width:350px;
+       padding: 10px;
+       background-color: transparent;
+       border: 1px solid white;
+       color:white;
+       font-size:1rem;
+     
+   }
+   
+   .inpt::placeholder{
+       color: white;
+   }
+   
+   .inpt:focus{
+       outline:none;
+       
+   }
+   .formStyle{
+       position: relative;
+       width:fit-content;
+       
+   }
+   .btn{
+       position: absolute;
+       padding: 10px;
+       right:0px;
+       bottom: 0px;
+       top:-2px;
+       color: white;
+       background-color: transparent;
+       border:none;
+       cursor: pointer;
+   }
+   
+   .btn:focus{
+       outline:none;
+   }
+   
+   .searchIcon{
+       width:20px;
+   }
+   

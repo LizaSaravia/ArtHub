@@ -1,0 +1,101 @@
+.containerImg{
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.img{
+    width:100px;
+    height: 100px;
+    
+}
+
+.tableContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid white;
+    margin:10px;
+    font-size: 1rem;
+    padding: 0 1em;
+}
+
+
+.orderContainer a {
+    color:#F427EC 
+}
+
+.orderContainer a:hover {
+    color: white;
+}
+
+
+.notOrders{
+    width:100%;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.links{
+    color:#F427EC;
+    cursor: pointer
+
+}
+
+.links:hover{
+    color: white
+}
+
+.btnEditProfile{
+    width:30%;
+    padding:10px;
+    background-color: transparent;
+    color:white;
+    font-size:1rem;
+    border: 1px solid white;
+    cursor:pointer
+}
+
+.btnEditProfile:hover{
+    animation: fadein ease 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.iconReview{
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+        background-color:transparent;
+    }
+    100% {
+        opacity:1;
+        background-color: #F427EC;
+    }
+  }
+
+@media screen and (max-width: 480px){
+
+    .btnEditProfile{
+        width: 100%;
+    }
+    
+}

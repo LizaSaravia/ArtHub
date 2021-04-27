@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@600&display=swap');
+body {
+  background-color: black;
+  font-family: 'Amiko', sans-serif;
+  margin:0;
+  color:white; 
+  letter-spacing: -0.06em;
+
+}
+div:focus{
+  outline: none;
+}
+
+
+.main{
+  width:100%;
+}

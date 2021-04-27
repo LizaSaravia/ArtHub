@@ -1,0 +1,197 @@
+.mainDivPopUp {
+    position: fixed;
+    width: 60%;
+    height: fit-content;
+    top: 10px;
+    left: 280px;
+    right: 0;
+    bottom: 0;
+    margin: 2vh;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white; 
+    z-index: 9999;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1{
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.column1{
+    display: flex;
+    margin: 0 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.column2{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    justify-content: center;
+
+}
+
+
+.picture{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    max-height: 300px;
+    min-height: 200px ;
+    max-width: 300px;
+}
+
+.titles{
+    font-size: 0.90rem;
+}
+
+.input{
+    color:white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width:100%;
+    align-self: center;
+    font-size: 0.9rem;
+}
+
+.btnCloseDiv{
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    right:0;
+    border: none;
+    margin: 10px;
+    cursor:pointer;
+
+
+}
+
+.btnCloseDiv{
+    outline:none;
+}
+
+.close{
+    width: 25px;
+    height: 25px;
+}
+
+.btnSelect{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 20px;
+   padding-left:20px;
+   margin-top:20px;
+   margin-right: 10px;
+   background-color: transparent;
+   color: white;
+   font-size: 15px;
+   border:1px solid white;
+   cursor: pointer;
+   margin:20px;
+}
+
+
+.btn:hover{
+   animation: color 1s infinite;
+  
+   
+}
+
+.btn:focus{
+   outline: none;
+}
+
+
+/*Key Frames*/
+
+@keyframes color {
+   0% {
+         background-color: #f427ed78; 
+   }
+
+   20% {
+       background-color: #f427ed8a; 
+   }
+
+   40%{
+       background-color: #f427eda2; 
+       border-color:rgba(255, 255, 255, 0.657)
+   }
+
+   60%{
+       background-color: #f427edc4; 
+       border-color:rgba(255, 255, 255, 0.445)
+   }
+
+   80%{
+       background-color: #f427ede5; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ 
+   100% {
+       background-color: #f427ed; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ }
+
+ @media screen and (max-width: 480px){
+
+    .containerPic{
+        display: flex;
+        margin-top: 5px;
+        order:1
+    }
+    .column2{
+        display: flex;
+        order:2
+    }
+    .btnSelect{
+        display: flex;
+        order:3
+    }
+    .column1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mainDivPopUp {
+        position:absolute;
+        width: 90%;
+        height: fit-content;
+        top: 150px;
+        left: 10px; 
+        margin-bottom: 10px;
+
+    }
+
+    .picture{
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        max-height: 100px;
+        min-height: 70px ;
+        max-width: 100px;
+        
+    }
+ }

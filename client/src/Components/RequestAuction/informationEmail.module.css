@@ -1,0 +1,199 @@
+.mainDivPopUp {
+    position: fixed;
+    width: 60%;
+    height: fit-content;
+    top: 60px;
+    left: 320px;
+    right: 0;
+    bottom: 0;
+    margin: 2vh;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white; 
+    z-index: 9999;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1{
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.column1{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.column2{
+    display: flex;
+    flex-direction: column;
+    margin: 5vh;
+    justify-content: center;
+
+}
+
+
+.picture{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    max-height: 300px;
+    min-height: 200px ;
+    max-width: 300px;
+}
+
+.titles{
+    font-size: 1.2rem;
+}
+
+.input{
+    color:white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width:100%;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.textArea{
+    font-size: 1.2rem;
+    font-family: inherit;
+    background-color: transparent;
+    color:white;
+    width: 100%;
+    min-height:30%;
+    border:1px solid white;
+    align-self: center;
+    resize: none;
+}
+
+.btnCloseDiv{
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    right:0;
+    border: none;
+    margin: 10px;
+    cursor:pointer;
+
+
+}
+
+.btnCloseDiv{
+    outline:none;
+}
+
+.close{
+    width: 25px;
+    height: 25px;
+}
+
+.btnSelect{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 20px;
+   padding-left:20px;
+   margin-top:20px;
+   margin-right: 10px;
+   background-color: transparent;
+   color: white;
+   font-size: 15px;
+   border:1px solid white;
+   cursor: pointer;
+   margin:20px;
+}
+
+
+.btn:hover{
+   animation: color 1s infinite;
+  
+   
+}
+
+.btn:focus{
+   outline: none;
+}
+
+
+/*Key Frames*/
+
+@keyframes color {
+   0% {
+         background-color: #f427ed78; 
+   }
+
+   20% {
+       background-color: #f427ed8a; 
+   }
+
+   40%{
+       background-color: #f427eda2; 
+       border-color:rgba(255, 255, 255, 0.657)
+   }
+
+   60%{
+       background-color: #f427edc4; 
+       border-color:rgba(255, 255, 255, 0.445)
+   }
+
+   80%{
+       background-color: #f427ede5; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ 
+   100% {
+       background-color: #f427ed; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ }
+
+ @media screen and (max-width: 480px){
+    .mainDivPopUp {
+        position: absolute;
+        width: 89%;
+        height: fit-content;
+        left: 4px;
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        
+        
+    }
+    .column1{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textArea{
+        font-size: 1.2rem;
+        font-family: inherit;
+        background-color: transparent;
+        color:white;
+        width: 100%;
+        min-height:30%;
+        border:1px solid white;
+        align-self: center;
+        resize: none;
+    }
+ }

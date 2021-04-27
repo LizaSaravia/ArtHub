@@ -1,0 +1,276 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btnFilters:hover {
+    background-color: #F427EC;
+}
+
+.sbContainer{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+.mainContainer{
+    display: flex;
+    width:100%;
+}
+
+
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.btnFilters{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size:1rem;
+    cursor: pointer;
+    margin-right:10px;
+    padding: 10px;
+    
+
+}
+
+.btnFilters:focus{
+    outline: none;
+}
+
+.favContainer{
+    margin-left: 30px;
+}
+
+/* .favContainer:active{
+    transform: scale(0.95);
+} */
+
+.imgFavContainer{
+    display: flex;
+    position: relative;
+
+}
+
+.imgFavContainer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -13px;
+    right: -22px;
+    width: 15px;
+    height: 15px;
+    background-color: #F427EC;
+    color: white;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.heart{
+    width: 40px;
+    height: 40px;
+}
+
+.imgContainer p{
+    display: none;
+}
+
+.imgContainer:hover p{
+    display: flex;
+}
+
+
+
+/* .btnFav span{
+    margin-left: 10px;
+} */
+
+.linkRefresh{
+    cursor:pointer;
+    text-decoration: underline;
+    color: #F427EC
+}
+.shoppingCartImg{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.shContainer{
+    display: flex;
+    width:40px;
+    height:100%;
+    margin-left: 10px;
+}
+
+.imgContainer{
+    position: relative;
+}
+
+.imgContainer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    width: 15px;
+    height: 15px;
+    background-color: #F427EC;
+    color: white;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.createProduct{
+    width:40px;
+    height: 40px;
+}
+.linkCreate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.addText{
+    display: none;
+    font-size: 0.9em;
+}
+
+.linkCreate:hover .addText{
+
+    
+    display: block;
+    animation: fadein ease 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+/* KEYFRAMES */
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+        color:transparent;
+    }
+    100% {
+        opacity:1;
+        color: #F427EC;
+    }
+  }
+
+
+/* PAGINADO  */
+
+.paginateContainer {
+    width:100%;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+  }
+
+.paginateContainer ul {
+    display: flex;
+    list-style: none;
+}
+
+.paginateContainer li {
+    margin: 0 1em;
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.paginateContainer li:hover {
+    color:  #F427EC;
+}
+
+.paginateContainer .paginationActive {
+    border: 1px solid #F427EC;
+    outline: none;
+}
+
+.paginateContainer * {
+    outline: none;
+}
+
+.iconsCont{
+    display: flex;
+}
+
+
+/*Responsive screen*/
+@media screen and (max-width: 480px){
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        margin-top: 180px;
+        
+    }
+
+    .sbContainer{
+        margin:0;
+        width:93%;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .iconsCont{
+        margin-top: 15px;
+    }
+
+    .btnContainer{
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    .btnFilters{
+        margin:0;
+        padding: 5px;
+    }
+
+    .shContainer{
+      width:40px;
+      margin: 0;
+      /* background-color: red;     */
+    }
+    .shContainer span{
+        top:-13px;
+        right: -25px;      
+      }
+
+    .imgContainer{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .paginateContainer li {
+        margin: 5px;
+        border: 1px solid white;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .paginateContainer ul {
+        display: flex;
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+    
+}

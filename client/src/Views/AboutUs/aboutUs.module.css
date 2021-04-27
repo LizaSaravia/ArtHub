@@ -1,0 +1,9 @@
+.mainContainer{
+    display: flex;
+}
+.aboutContainer{
+    width: 100%;
+    display: flex;
+    
+}
+

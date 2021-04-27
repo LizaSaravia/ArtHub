@@ -1,0 +1,167 @@
+.container {
+    width: 150vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: white;
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-left: 10vh;
+
+}
+
+.head{
+   font-size: 3vh;
+}
+
+.head th{
+    margin: 5vh;
+}
+
+.picture{
+    object-fit: cover;
+    width:100px;
+    height: 100px; 
+}
+
+
+.button{
+    color:white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid white;
+    cursor:pointer;
+    padding: 4px;
+    font-size: 3vh;
+    justify-content: center;
+}
+
+.table {
+    margin :2vh;
+    width: 100%;
+
+
+}
+
+.title{
+    font-size: 5vh;
+}
+
+.column{
+
+    font-size: 4vh;
+    width: 100%;
+}
+
+
+.auctions{
+    font-size: 3vh;
+    /* margin: 5vh; */
+   
+}
+
+.th {
+    text-align: start;
+    padding: 0.75vh;
+    
+}
+
+.btnContainer{
+    display: flex;
+    margin-top: 2px;
+    cursor:pointer
+}
+
+.icon{
+    margin-top:5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 3px;
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+}
+.btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left:20px;
+    margin-top:20px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border:1px solid white;
+    cursor: pointer;
+    margin:20px;
+    
+}
+.btn:hover{
+    animation: color 1s infinite;
+
+}
+.btn:focus{
+    outline:none;
+}
+
+
+.navBaralign{
+    display:flex;
+}
+
+ 
+ /*Key Frames*/
+ 
+ @keyframes color {
+    0% {
+          background-color: #f427ed78; 
+    }
+ 
+    20% {
+        background-color: #f427ed8a; 
+    }
+ 
+    40%{
+        background-color: #f427eda2; 
+        border-color:rgba(255, 255, 255, 0.657)
+    }
+
+ 
+    60%{
+        background-color: #f427edc4; 
+        border-color:rgba(255, 255, 255, 0.445)
+    }
+
+ 
+    80%{
+        background-color: #f427ede5; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  
+    100% {
+        background-color: #f427ed; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  }
+
+  @media all and (max-width:480px){
+    .container {
+        width: 100%;
+        height: 100%;
+        margin-top: 180px;
+        margin-left: 5vh;
+        margin-bottom: 10px;
+    
+    }
+
+    .column{
+
+        font-size: 3vh;
+    }
+
+    .picture{
+        max-width:80px;
+        max-height: 80px; 
+    }
+}

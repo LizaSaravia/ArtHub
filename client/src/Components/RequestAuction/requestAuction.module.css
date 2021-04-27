@@ -1,0 +1,293 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  
+    justify-content: center;
+    align-items:center;
+}
+
+.divTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    font-size: 1.5rem;
+}
+
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formCategory{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width:60%;
+}
+
+.selectCategory{
+    width:100%;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    background-color: transparent;
+    color:white;
+    border: none;
+    border: 1px solid white;
+    font-size: 1rem;
+
+}
+
+.loadingPic{
+    background-image: url(../../Images/simple.gif);
+    height:110px;
+    width: 110px;
+}
+
+.selectCategory:focus{
+    outline:none;
+}
+
+.options{
+    background-color: black;
+}
+
+.btnCategory{
+    
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor:pointer
+}
+
+.btnCategory:hover{
+    animation: color 1s infinite;
+
+}
+
+.btnCategory:focus{
+    outline: none;
+}
+.showCategory{
+    width: 35%;
+    color:white;
+    font-size: 1rem;
+    font-weight: 500;
+    border :1px solid white;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.alignForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.alignSelectedCat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:5px;
+}
+
+.containerForm2{
+   
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.input{
+    margin-bottom: 10px;
+    color: white;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    
+}
+.input::placeholder{
+    color: white;
+}
+.file{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.pictureAdd{
+    color:white;
+    font-size: 1rem;
+}
+.containerImgs{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.pictureAdd{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    margin:20px;
+    border: 1px solid white;
+    position: relative;
+}
+.btnDelete{
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 80px;
+    background-color: black;
+    color:white;
+    border:0.5px solid white;
+}
+.btnDelete:focus{
+    outline: none;
+}
+
+.container3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.containerArtImage{
+    font-size: 1.2rem;
+}
+.inputFile{
+    display: flex;
+    background-color: transparent;
+    font-size: 1rem;
+    border:1px solid white;
+    padding:5px;
+    margin:10px
+}
+.inpt{
+    display: none;
+}
+
+.btnSelect{
+    background-color: transparent;
+    border: 1px solid white; 
+    width:fit-content; 
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 2rem;
+    
+
+}
+.btnSelect:hover{
+    animation: color 1s infinite;
+ 
+}
+.label2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.btn{
+    background-color: transparent;
+    color:white;
+    border:1px solid white;
+    cursor:pointer;
+    width:20%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.btn:hover{
+    animation: color 1s infinite;
+
+}
+.btn:focus{
+    outline:none;
+}
+
+.navBaralign{
+    display:flex;
+}
+/* //Key Frames// */
+
+@keyframes color {
+    0% {
+          background-color: #f427ed78; 
+    }
+
+    20% {
+        background-color: #f427ed8a; 
+    }
+
+    40%{
+        background-color: #f427eda2; 
+        border-color:rgba(255, 255, 255, 0.657)
+    }
+
+    60%{
+        background-color: #f427edc4; 
+        border-color:rgba(255, 255, 255, 0.445)
+    }
+
+    80%{
+        background-color: #f427ede5; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  
+    100% {
+        background-color: #f427ed; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  }
+
+  @media screen and (max-width: 670px){
+    .alignForm{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .btnCategory{
+        margin-top: 15px;
+    }
+    .btn{
+        width:30%;
+    }
+    .showCategory{
+        width: 70%;
+    }
+  }

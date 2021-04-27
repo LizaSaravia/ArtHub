@@ -1,0 +1,111 @@
+.mainContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mainContainer h1{
+    width: 90%;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    border-bottom: 2px solid rgba(244,39,236,1);
+    line-height: 5.5rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+}
+
+.card {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-left: 20px;
+
+}
+.order h2{
+    font-size: 1rem;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+   
+}
+.btn{
+    background-color: transparent;
+    color: white;
+     font-size: 1rem;
+     border: none;
+     text-decoration: underline;
+     cursor: pointer;
+     padding: 5px;
+}
+.btn:hover{
+    color:rgba(244,39,236,1);
+}
+.btn:focus{
+    outline: none;
+}
+
+.align{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineOrdersWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+
+
+.lineOrder{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(208,30,201);
+    background: linear-gradient(120deg, rgba(208,30,201,1) 27%, rgba(244,39,236,1) 78%);
+    color:black;
+    border-radius: 20px;
+    opacity: 0;
+    animation: new-item-animation .3s alternate forwards;
+}
+@keyframes new-item-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.75) ;
+        
+}
+
+    100% {
+        opacity: 1;
+        transform : translateY(0) scale(1);
+    }
+}

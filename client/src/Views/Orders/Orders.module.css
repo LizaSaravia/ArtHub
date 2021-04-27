@@ -1,0 +1,26 @@
+.mainContainer {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 480px){ 
+    .mainContainer {
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

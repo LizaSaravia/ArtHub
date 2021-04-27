@@ -1,0 +1,61 @@
+.mainContainer {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.categories{
+    font-size: 4vh;
+}
+
+.table {
+    border: 1px solid;
+    border-color: white;
+    padding: 2%;
+    margin: 5%
+}
+
+
+.th {
+    text-align: start;
+    padding-bottom: 30px;
+}
+
+.btnContainer{
+    display: flex;
+    margin-top: 2px;
+}
+
+
+
+.icon{
+    margin-top:5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 3px;
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media all and (max-width:480px){
+    .description{
+        display: none;
+    }
+    .table{
+        margin:0;
+    }
+
+    .container {
+        margin-top: 180px;
+        margin-bottom: 20px;
+    
+    }
+}
+

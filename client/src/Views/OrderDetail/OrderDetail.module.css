@@ -1,0 +1,239 @@
+.containerImg{
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.img{
+    width:100px;
+    height: 100px;
+    
+}
+
+.tableContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid white;
+    margin:10px;
+}
+
+.navBaralign{
+    display: flex;
+}
+
+.productInfo{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.infoProduct{
+    font-size: 1rem;
+    
+}
+
+.notOrders{
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.links{
+    
+    color:#F427EC
+}
+
+.containerImg{
+    width:100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.img{
+    width:100px;
+    height: 100px;
+    
+}
+
+.tableContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.orderContainer{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid white;
+    margin:10px;
+}
+
+.OrderInfo{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.infoProduct{
+    font-size: 1rem;
+    
+}
+
+.notOrders{
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.links{
+  
+    color:#F427EC
+}
+.iconReview{
+    width: 40px;
+    height: 40px;
+}
+
+.checkIcon{
+  position: asolute;
+  top:0;
+  right:0;
+  width:20px;
+  height: 20px;
+}
+
+.address{
+    width: 50%;
+}
+
+.btn{
+    padding: 5px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border:1px solid white;
+    cursor: pointer;  
+    font-family: inherit; 
+}
+
+btnPago 
+.btn:hover {
+    background-color: #F427EC;
+}
+
+
+/* Responsive screen */
+@media only screen and (max-width: 410px){
+    .secondContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 130px;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .orderContainer{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+        border:1px solid white;
+    }
+
+    .productInfo{
+        width: 50%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img{
+        width:90px;
+        height: 90px;
+        
+    }
+
+    .containerImg {
+        margin-bottom: 0px;
+        margin-right: 2px;
+        margin-top: 3%;
+    }
+
+    .infoProduct {
+        font-size: 13px;
+        margin: 0px
+    }
+    
+    .title {
+        font-size: 14px;
+        margin: 7px
+    }
+
+    .btnPago{
+        padding: 5px 20px;
+        background-color: transparent;
+        color: white;
+        font-size: 12px;
+        border:1px solid white;
+        cursor: pointer;  
+        font-family: inherit; 
+    }
+     
+    .btnPago:hover {
+        background-color: #F427EC;
+    }
+    
+}

@@ -1,0 +1,199 @@
+.navContainer{
+    display: flex;
+    flex-direction: row; 
+}
+
+.container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+.imgContainer{
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid white;
+}
+
+.infoContainer{
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   margin:20px
+}
+
+.align{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title{
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2rem;
+}´
+
+.artistContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.button{
+    color:white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid white;
+    cursor:pointer;
+    padding: 10px;
+    font: inherit;
+    justify-content: center;
+}
+
+.borderContainer{
+    width: 60%;
+    display:flex;
+    border:2px solid white;
+}
+
+.button:hover{
+    animation: color 1s infinite;
+}
+
+
+.categoriesContainer{
+   display:flex;
+   justify-content:space-around;
+
+}
+
+
+.catContainer{
+    border-bottom: 1px solid white;
+}
+
+.containerButtons{
+    display: flex;
+    justify-content:space-between;
+    margin: 5px;
+}
+
+.infoSecondContainer{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+}
+
+@keyframes color {
+    0% {
+          background-color: #F427EC;
+
+    }
+    20% {
+        background-color: #F427EC;
+
+    }
+    40%{
+     
+        background-color: #F427EC;
+
+    }
+
+    60%{
+        background-color: #F427EC;
+
+    }
+
+    80%{
+        background-color: #F427EC; 
+
+    }
+  
+    100% {
+        background-color: #F427EC;
+
+    }
+  }
+
+  /* Responsive screen */
+  @media screen and (max-width: 480px){
+
+    .container{
+        margin:0;
+        margin-top: 180px;
+    }
+
+    .borderContainer{
+        width:90%;
+        border:1px solid white;
+    
+    }
+
+    .align{
+        margin:0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imgContainer{
+        
+        width: 50%;
+        border-right: 1px solid white;
+    }
+
+    .title{
+        font-size:1.2rem;
+        margin-right: 5px;
+    }
+
+    .infoContainer{
+        width:50%;
+        margin:10px;
+    }
+   
+    .infoSecondContainer h3{
+        margin:0px;
+      
+        margin-bottom: 5px;
+
+        font-size: 0.8rem;
+    }
+    .categoriesContainer h3 {
+      font-size: 0.8rem;
+      
+    }
+    .categoriesContainer{
+        margin:0;
+        height: fit-content;
+    }
+
+    .categoriesContainer p{
+        font-size: 0.8rem;
+        margin:0;
+        margin-bottom: 5px;
+      }
+    .description{
+        font-size: 0.8rem;
+    }
+
+    .containerButtons button{
+        padding: 2px;
+        font-size: 0.7rem;
+    }
+
+    .containerButtons{
+        margin:0;
+    }
+  }

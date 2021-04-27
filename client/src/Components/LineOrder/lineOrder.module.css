@@ -1,0 +1,98 @@
+.card *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    display: flex;
+    width: 500px;
+    height: 180px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.imgContainer{
+    width: 50%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quantity{
+    display: flex;
+}
+
+.quantity p{
+    padding: 5px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border:1px solid white;
+    /* margin: 0 10 px; */
+}
+
+.title{
+    text-align: center;
+}
+
+
+.btn{
+    padding: 5px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border:1px solid white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    background-color: #F427EC;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+.btn.close{
+    padding: 3px 9px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.priceDefault{
+    text-decoration: line-through;
+}
+
+.discount{
+    color: #F427EC;
+}
+
+@media screen and (max-width: 480px){
+    .card{
+        width: 100%;
+    }
+
+    .titleContainer{
+        width: 90%;
+    }
+
+    .title{
+
+        text-align: left;
+    }
+    
+}

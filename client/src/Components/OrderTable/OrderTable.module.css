@@ -1,0 +1,125 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p {
+    font-size: 1.5rem;
+}
+
+.table {
+    border: 1px solid;
+    border-color: white;
+    padding: 2%;
+}
+
+.th {
+    padding: 15px
+}
+
+.tr {
+    border-bottom: 1px solid;
+    border-color: rgb(233, 233, 233);
+}
+
+.btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left:20px;
+    margin-top: 8%;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border:2px solid white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    animation: color 1s infinite;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+/*Key Frames*/
+
+@keyframes color {
+    0% {
+          background-color: #f427ed78; 
+    }
+
+    20% {
+        background-color: #f427ed8a; 
+    }
+
+    40%{
+        background-color: #f427eda2; 
+        border-color:rgba(255, 255, 255, 0.657)
+    }
+
+    60%{
+        background-color: #f427edc4; 
+        border-color:rgba(255, 255, 255, 0.445)
+    }
+
+    80%{
+        background-color: #f427ede5; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  
+    100% {
+        background-color: #f427ed; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  }
+
+/* Responsive screen */
+
+@media only screen and (max-width: 480px){ 
+    .p {
+        font-size: 15px;
+    }
+    
+    .titleContainer {
+        width: 40px;
+        padding: 0px
+    }
+
+    .table {
+        border: 1px solid;
+        border-color: white;
+        padding: 2%;
+        margin-top: 3%;
+    }
+    
+    .th {
+        padding: 5px
+    }
+    
+    .tr {
+        border-bottom: 1px solid;
+        border-color: rgb(233, 233, 233);
+        font-size: 12px;
+    }
+
+    .filterContainer {
+        font-size: 14px;
+    }
+    
+    .btn{
+        padding: 5px;
+        width: 100%;
+        margin-top: 3%;
+        margin-right: 5%;
+        background-color: transparent;
+        color: white;
+        font-size: 11px;
+        border:1px solid white;
+        cursor: pointer;
+    }
+}

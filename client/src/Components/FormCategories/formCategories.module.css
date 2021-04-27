@@ -1,0 +1,49 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+}
+
+.input{
+    color:white;
+    margin: 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.btn{
+    color:white;
+     background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid white;
+    cursor:pointer;
+    padding: 10px;
+    position: relative;
+    margin-left: 15%;
+}
+
+.containerCatPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 110px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.progressBar{
+    display: flex;
+    width: 110px;
+}
+
+.inputFile{
+    display:none;
+}

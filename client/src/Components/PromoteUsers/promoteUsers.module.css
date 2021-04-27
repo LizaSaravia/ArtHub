@@ -1,0 +1,146 @@
+.mainDivPopUp {
+    position: fixed;
+    width: 60%;
+    height: fit-content;
+    top: 0;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white; 
+    z-index: 9999;
+}
+
+.titles{
+    font-size: 1.2rem;
+}
+
+.input{
+    color:white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width:100%;
+    align-self: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.btnCloseDiv{
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    right:0;
+    border: none;
+    margin: 10px;
+    cursor:pointer;
+
+
+}
+
+.btnCloseDiv{
+    outline:none;
+}
+
+.close{
+    width: 25px;
+    height: 25px;
+}
+
+.containerInput{
+    display: flex;
+    margin: 9vh;
+    font-size: 3.5vh;
+    
+}
+
+.label{
+    margin-right: 5vh;
+    
+}
+
+.btnSelect{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 20px;
+   padding-left:20px;
+   margin-top:20px;
+   margin-right: 10px;
+   background-color: transparent;
+   color: white;
+   font-size: 15px;
+   border:1px solid white;
+   cursor: pointer;
+   margin:20px;
+}
+
+
+.btn:hover{
+   animation: color 1s infinite;
+  
+   
+}
+
+.btn:focus{
+   outline: none;
+}
+
+
+/*Key Frames*/
+
+@keyframes color {
+   0% {
+         background-color: #f427ed78; 
+   }
+
+   20% {
+       background-color: #f427ed8a; 
+   }
+
+   40%{
+       background-color: #f427eda2; 
+       border-color:rgba(255, 255, 255, 0.657)
+   }
+
+   60%{
+       background-color: #f427edc4; 
+       border-color:rgba(255, 255, 255, 0.445)
+   }
+
+   80%{
+       background-color: #f427ede5; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ 
+   100% {
+       background-color: #f427ed; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ }
+
+ @media screen and (max-width: 480px){
+    .mainDivPopUp {
+        position:absolute;
+        width: 90%;
+        height: fit-content;
+        top: 500px;
+        left:2px;    
+    }
+
+    .input{
+        width:90%;
+
+    }
+
+  }

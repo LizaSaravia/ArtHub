@@ -1,0 +1,72 @@
+.mainContainerArtist{
+    display: flex;
+}
+
+.sbContainer{
+   
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.titleContainer {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.title{
+    
+    width: fit-content;
+    font-size: 3rem;
+    line-height: 1.5em;
+    margin:0;
+    
+    margin-top: 50px;
+    border-bottom:2px solid white;
+}
+
+.secondContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.artists{
+    margin-top:40px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btnFilters{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size:1rem;
+    cursor: pointer;
+    margin-right:10px;
+    padding: 10px;
+    
+
+}
+
+.btnFilters:focus{
+    outline: none;
+}
+
+/*Responsive screen*/
+@media only screen and (max-width: 480px){
+    .mainContainerArtist{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+    
+}

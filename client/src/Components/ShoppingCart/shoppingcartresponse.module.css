@@ -1,0 +1,25 @@
+.container{
+    margin: auto;
+    margin-top: 40px;
+    width: 400px;
+    border: 2px solid white;
+    padding: 20px 50px;
+}
+
+a{
+    color: white;
+}
+
+.btn{
+    padding: 15px 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border:1px solid white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}

@@ -1,0 +1,88 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: white;
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-left: 10vh;
+
+}
+
+
+.button{
+    color:white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid white;
+    cursor:pointer;
+    padding: 4px;
+    font-size: 3vh;
+    justify-content: center;
+}
+
+.table {
+
+    margin :2vh
+
+}
+
+.title{
+    font-size: 5vh;
+}
+
+.column{
+    font-size: 4vh;
+}
+
+.users{
+    font-size: 3vh;
+}
+
+.th {
+    text-align: start;
+    padding: 0.75vh;
+    
+}
+
+.btnContainer{
+    display: flex;
+    margin-top: 2px;
+    cursor:pointer
+}
+
+.icon{
+    margin-top:5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 3px;
+    width:20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media all and (max-width:480px){
+    .container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 180px;
+        margin-left: 5vh;
+        margin-bottom: 10px;
+    
+    }
+
+    .name{
+        display: none;
+    }
+
+    .lastname{
+        display: none;
+    }
+
+    .email{
+        display: none;
+    }
+
+}

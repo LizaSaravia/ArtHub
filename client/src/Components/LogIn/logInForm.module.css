@@ -1,0 +1,157 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.alignForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.input{
+width: 100%;
+box-sizing: border-box;
+background-color: transparent;
+border: none;
+border-bottom: 2px solid white;
+font-size: 1.2rem;
+line-height: 40px;
+margin-bottom: 30px;
+color:white
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.textContainer{
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: flex-end;
+    margin-top:20px;
+}
+
+.pText{
+    margin-right: 8px;
+    font-size: 1.2rem;
+    
+}
+
+.link{
+    color: #F427EC;
+    font-size:1.2rem
+}
+
+.btn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left:40px;
+    margin-top:20px;
+    background-color: transparent;
+    color: white;
+    font-size:1.2rem;
+    border:2px solid white;
+    cursor: pointer;
+}
+
+.btn i{
+   margin-right: 25px;
+}
+
+.btn:hover{
+    animation: color 1s infinite;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btnImg{
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+}
+/*Key Frames*/
+
+@keyframes color {
+    0% {
+          background-color: #f427ed78; 
+    }
+
+    20% {
+        background-color: #f427ed8a; 
+    }
+
+    40%{
+        background-color: #f427eda2; 
+        border-color:rgba(255, 255, 255, 0.657)
+    }
+
+    60%{
+        background-color: #f427edc4; 
+        border-color:rgba(255, 255, 255, 0.445)
+    }
+
+    80%{
+        background-color: #f427ede5; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  
+    100% {
+        background-color: #f427ed; 
+        border-color:rgba(255, 255, 255, 0)
+    }
+  }
+
+  /* Responsive screen */
+  @media screen and (max-width: 480px){
+      .mainContainer{
+          margin-top: 100px;
+        
+      }
+
+      .alignForm{
+          width:70%;
+      }
+      .input{
+          margin-bottom: 10px;
+          font-size: 1rem;
+          border-bottom: 1px solid white;
+      }
+
+      .btn{
+          padding:10px;
+          border: 1px solid white;
+          font-size: 1rem;
+      }
+
+      .textContainer p{
+          font-size: 1rem;
+      }
+      .textContainer a{
+        font-size: 1rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+  }

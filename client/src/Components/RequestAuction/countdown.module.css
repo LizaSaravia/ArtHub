@@ -1,0 +1,165 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date{
+    margin: 10px 0;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    line-height: 1.9rem;   
+    width: 125px;
+}
+
+.containerG {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-self: center;
+
+    
+
+}
+
+.container {
+    display: flex;
+	align-items: center;
+	background: transparent;
+	width:fit-content;
+    margin-right: 2vh;
+	border-radius: 5px;
+    color:rgb(251, 250, 250);
+    font-size:5vh;
+}
+
+.text{
+
+    font-size: 5vh;
+}
+span{
+    color:white
+}
+
+.ganador{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 3vh;
+    width: 350px;
+    text-align: center;
+        border:1px solid #f427ec;
+        outline:none;
+        animation-name: greenPulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    
+    
+
+   
+}
+.countdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour{
+    margin: 10px 0;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    line-height: 1.9rem;   
+    width: 80px;
+}
+
+.btn{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left:10px;
+    margin-top:20px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 4vh;
+    border:1px solid white;
+    cursor: pointer;
+    margin:20px;
+ }
+
+ @keyframes greenPulse {
+    from { -webkit-box-shadow: 0 0 1px #f427ed; }
+    50% {  -webkit-box-shadow: 0 0 18px #f427edc4; }
+    to {-webkit-box-shadow: 0 0 9px #f427eda2; }
+    }
+
+    .btn{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 20px;
+   padding-left:20px;
+   margin-top:20px;
+   margin-right: 10px;
+   background-color: transparent;
+   color: white;
+   font-size: 4vh;
+   border:1px solid white;
+   cursor: pointer;
+   margin:20px;
+}
+
+
+.btn:hover{
+   animation: color 1s infinite;
+  
+   
+}
+
+.btn:focus{
+   outline: none;
+}
+
+
+/*Key Frames*/
+
+@keyframes color {
+   0% {
+         background-color: #f427ed78; 
+   }
+
+   20% {
+       background-color: #f427ed8a; 
+   }
+
+   40%{
+       background-color: #f427eda2; 
+       border-color:rgba(255, 255, 255, 0.657)
+   }
+
+   60%{
+       background-color: #f427edc4; 
+       border-color:rgba(255, 255, 255, 0.445)
+   }
+
+   80%{
+       background-color: #f427ede5; 
+       border-color:rgba(255, 255, 255, 0)
+   }
+ 
+   100% {
+       background-color: #f427ed; 
+       border-color:rgba(255, 255, 255, 0)
+   } 
+ }

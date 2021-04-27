@@ -1,0 +1,253 @@
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:25%;  
+    margin:30px;
+    height: auto;
+    border-radius: 5px;
+    position:relative;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    position: relative;
+}
+
+.text{
+    color: white;
+    line-height: 1rem;   
+    font-size: 1.5em;
+    margin:0;
+    margin-top: 20px;
+    cursor:default
+    
+}
+.noStock{
+    font-size: 1em;
+    position:absolute;
+    top:0px;
+    right:10px;
+    color: #f042ea;
+    cursor:default;
+}
+
+.noStockMsg{
+    font-size: 1em;
+}
+
+.noStockAdmin{
+    justify-content: center;
+    border: 1px solid #f042ea;
+    background-color: #f042ea;
+    border-radius: 5px;
+    padding: 3px;
+    position:absolute;
+    top:30px;
+
+}
+
+.name{
+    color: white;
+    line-height: 1.3rem;   
+    font-size: 2em;
+    margin:0;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.linkName{
+    text-decoration: none;
+}
+
+.name:hover{
+    color:#F427EC
+}
+.artist{
+    color: white;
+    line-height: 1rem;   
+    font-size: 1em;
+    margin:0;
+    margin-top: 20px;
+    /* text-decoration: underline; */
+}
+/* .artist:hover{ 
+        color:#F427EC
+} */
+.pieceName{
+    color:white;
+    line-height: 1em;
+    font-size: 1em;
+    margin:0;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.linksArtCard{
+    
+    position: absolute;
+    display: none;
+    width:100%;
+    height: 100%;
+}
+.cardContainer:hover .linksArtCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadein ease 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.linksA{
+    text-decoration: underline;
+    color:white;
+}
+
+.linksA:hover{
+    color: #F427EC;
+}
+
+.cardImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: -99999;  
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+    width:fit-content;
+    line-height: 2em;  
+}
+
+.btnFav{
+    width: 40px;
+    height:40px;
+    position: absolute;
+    top:60px;
+    right:10px;
+    background-color: black;
+    padding:5px;
+    border-radius:5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.btnFav:hover{
+    color: #F427EC;
+}
+
+.btnFav.pink{
+    color: #F427EC;
+}
+
+.btnEdit{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: black;
+    object-fit: contain;
+    cursor: pointer;
+    border:none;   
+}
+
+.btnDelete{
+    position: absolute;
+    top:32px;
+    right:0;
+    background-color: black;
+    object-fit: contain;
+    cursor: pointer;
+    border:none
+}
+
+.btnDelete:focus{
+    outline: none;
+}
+
+.btnEdit:focus{
+    outline: none;
+}
+
+.btnDelete:hover{
+    animation: color 1s infinite;
+}
+
+.btnEdit:hover{
+    animation: color 1s infinite;
+}
+.icon{
+    margin-top:3px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width:20px;
+    height: 20px;
+}
+
+.cart{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    top:10px;
+    right:10px;
+    background-color: black;
+    padding:5px;
+    border-radius:5px;
+}
+
+.offer{
+    position: absolute;
+    bottom: -10px;
+    background-color: #F427EC;
+    width: 100%;
+    text-align: center;
+}
+
+
+@keyframes color {
+    0% {
+          background-color: #000000; 
+
+    }
+    100% {
+        background-color: #F427EC; 
+
+    }
+  }
+
+ 
+  
+@keyframes fadein {
+    0% {
+        opacity:0;
+        background-color: transparent;
+    }
+    100% {
+        opacity:1;
+        background-color: rgba(0, 0, 0, 0.698);
+    }
+  }
+
+
+  
+/*Responsive screen*/
+@media screen and (max-width: 480px){
+    .cardContainer{
+        width: 90%;
+    }
+
+    
+}

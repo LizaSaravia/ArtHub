@@ -1,0 +1,180 @@
+.mainContainer{
+    display:flex;
+    width: 100%;
+}
+
+.secondContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.containerProduct{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    
+}
+
+.textContainer{
+    width:100%;
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+}
+.imgContainer{
+    width: 200px;
+    height: 100%;
+    
+
+}
+.img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productDesc{
+    margin:0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border: 2px solid white;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+.formContainer p{
+    color: #f427ed
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.commentContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textArea{
+    margin-top:15px;
+    font-family: 'Amiko', sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.06em;
+    background-color: black;
+    color:white;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    min-height: 110px;
+    resize: none;
+
+}
+
+.textArea:focus{
+    outline:none;
+}
+
+.btn{
+    padding:5px;
+    font-size: 1rem;
+    cursor:pointer;
+    background-color: transparent;
+    color:white;
+    border:none;
+    border-top:1px solid white;
+
+}
+
+.btn:focus{
+    outline:none;
+}
+
+.btn:hover{
+    animation: color 1s infinite;
+    
+}
+.commentContainer p{
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.btnDeleteConten{
+    display: flex;
+    width:fit-content;
+    height: 35px;
+    margin-left:20px;
+}
+.btnDelete{
+    width: 100%;
+    height: 100%;
+}
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    color:#f427ed;
+    text-decoration: none;
+    width:40px;
+    height: 40px;
+}
+
+.deleteReview{
+    color: #f427ed;
+    margin-right:5px;
+    display:none;
+    cursor:pointer;
+}
+.btnDeleteConten:hover .deleteReview{
+    display: flex;
+}
+
+@keyframes color {
+    0% {
+          background-color: #f427ed78; 
+
+    }
+    20% {
+        background-color: #f427ed8a; 
+
+    }
+    40%{
+     
+        background-color: #f427eda2; 
+
+    }
+
+    60%{
+        background-color: #f427edc4; 
+
+    }
+
+    80%{
+        background-color: #f427ede5; 
+
+    }
+  
+    100% {
+        background-color: #f427ed; 
+
+    }
+  }

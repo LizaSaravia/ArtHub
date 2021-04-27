@@ -1,0 +1,47 @@
+.mainContainer {
+display: flex;
+justify-content: center;
+}
+
+.form {
+    border: solid 1px white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.dateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.toContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%
+}
+
+.to2 {
+    padding-left: 15px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+.asunto {
+    width: 172%;
+    height: 70%;
+}
+
+.mensaje {
+    width: 173%;
+
+}
